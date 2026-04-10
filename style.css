@@ -1,5 +1,5 @@
 body {
-    background-color: #1a1a1a; /* Escureci o fundo para destacar o branco (estilo GTA) */
+    background-color: #1a1a1a; /* Escureci o fundo para destacar o branco */
     font-family: 'Helvetica', sans-serif;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
 }
 
 header .logo {
-    width: 80px; /* Lembra que ela estava grande? Aqui a gente trava o tamanho */
+    width: 80px;
     margin-bottom: 10px;
 }
 
