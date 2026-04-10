@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze Bank | Invest in Victory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Maze_Bank_Logo.webp" alt="Maze Bank Logo" class="logo">
+            <h1>MAZE BANK</h1>
+        </header>
+
+        <main id="app">
+           <div id="login-screen">
+    <div class="login-box">
+        <h2>ACESSO RESTRITO</h2>
+        <input type="text" id="user-id" placeholder="ID DO USUÁRIO (ex: Franklin)">
+        <input type="password" id="user-pass" placeholder="SENHA (PIN)">
+        <button onclick="validaLogin()">AUTENTICAR</button>
+        <p id="login-error" style="color: #E31B23; font-size: 12px; margin-top: 10px;" class="hidden">
+            ACESSO NEGADO: CREDENCIAIS INVÁLIDAS
+        </p>
+    </div>
+</div>
+
+            <div id="dashboard" class="hidden">
+    <div class="balance-card">
+        <p>SALDO EM CONTA CORRENTE</p>
+        <h3 id="balance">$ 1,500,000</h3>
+    </div>
+
+    <div class="menu-grid">
+    <button class="btn-action" onclick="depositar()">DEPÓSITO</button>
+    <button class="btn-action" onclick="sacar()">SAQUE</button>
+    <button class="btn-action" onclick="fazerEmprestimo()">EMPRÉSTIMO</button> 
+    <button class="btn-action" onclick="verTransacoes()">TRANSAÇÕES</button>
+    <button class="btn-action" onclick="sair()" style="background-color: #333; grid-column: span 2;">SAIR DA CONTA</button>
+</div>
+
+    <div id="transactions-section" class="hidden">
+        <h3 style="color: #000000; margin-top: 20px;">HISTÓRICO RECENTE</h3>
+        <ul id="transactions-list" style="list-style: none; padding: 0; text-align: left;">
+            </ul>
+        <button class="btn-action" onclick="voltarAoMenu()" style="margin-top: 10px;">VOLTAR</button>
+    </div>
+</div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

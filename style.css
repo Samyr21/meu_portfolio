@@ -1,0 +1,110 @@
+body {
+    background-color: #1a1a1a; /* Escureci o fundo para destacar o branco (estilo GTA) */
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    border-top: 8px solid #E31B23; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    width: 80px; /* Lembra que ela estava grande? Aqui a gente trava o tamanho */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: #E31B23;
+    font-size: 24px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Organização dos botões em duas colunas */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.balance-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.balance-card p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.balance-card h3 {
+    font-size: 28px;
+    margin: 5px 0;
+    color: #333;
+}
+
+button {
+    background-color: #E31B23;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #b3151b;
+}
+
+/* Estilo para a Lista de Transações */
+#transactions-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#transactions-list {
+    list-style: none;
+    padding: 0;
+    max-height: 250px; /* Adiciona scroll se tiver muita transação */
+    overflow-y: auto;
+}
+
+#transactions-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.login-box input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.login-box input:focus {
+    border-color: #E31B23;
+}
+
+.hidden { display: none !important; }
